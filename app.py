@@ -3,6 +3,10 @@ from flask import Flask
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId 
 
+from os import path
+if path.exists("envvar.py"):
+  import envvar
+
 
 app = Flask(__name__)
 
