@@ -10,10 +10,26 @@
     </head>
     
     <body>
-               
-        <h1> HEY! </h1>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><i class="material-icons">home</i>Arike's Cookbook</a>
+                    <ul class="right hide-on-med-and-down">
+                    <li><a href="recipes.html"><i class="material-icons left">list</i>Recipes</a></li>
+                    <li><a href="create.html"><i class="material-icons left">add</i>Create Recipe</a></li>
+                    <li><a href="yourrecipe.html"><i class="material-icons left">person</i>Your Recipe</a></li>
+                    <li><a href="shop.html"><i class="material-icons right">shopping_cart</i>Shop</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
         {% block content %}
         {% endblock %}
+
+        <footer class="page-footer footer-copyright center-align">
+            © 2020 Copyright Dorcas Olomofe (For educational purposes only)
+        </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>   
