@@ -18,6 +18,12 @@ nav{
     font-size: 30px;
 }
 
+.box{
+    width: 35%;
+    margin: auto;
+    margin-top: 0;
+}
+
 body {
     display: flex;
     min-height: 100vh;
