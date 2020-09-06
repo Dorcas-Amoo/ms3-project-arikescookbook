@@ -15,10 +15,10 @@
                 <div class="nav-wrapper deep-orange">
                     <a href="#!" class="brand-logo"><i class="material-icons">home</i>Arike's Cookbook</a>
                     <ul class="right hide-on-med-and-down">
-                    <li><a href="recipes.html"><i class="material-icons left">list</i>Recipes</a></li>
-                    <li><a href="create.html"><i class="material-icons left">add</i>Create Recipe</a></li>
-                    <li><a href="yourrecipe.html"><i class="material-icons left">person</i>Your Recipe</a></li>
-                    <li><a href="shop.html"><i class="material-icons right">shopping_cart</i>Shop</a></li>
+                    <li><a href="{{url_for('recipes')}}"><i class="material-icons left">list</i>Recipes</a></li>
+                    <li><a href="{{url_for('create')}}"><i class="material-icons left">add</i>Create Recipe</a></li>
+                    <li><a href="{{url_for('yourrecipe')}}"><i class="material-icons left">person</i>Your Recipe</a></li>
+                    <li><a href="{{url_for('shop')}}"><i class="material-icons right">shopping_cart</i>Shop</a></li>
                     </ul>
                 </div>
             </nav>
