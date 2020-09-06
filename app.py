@@ -29,6 +29,21 @@ def recipes():
     return render_template("recipes.html")
 
 
+@app.route("/create_recipe")
+def create():
+    return render_template("create.html")
+
+
+@app.route("/your_recipe")
+def yourrecipe():
+    return render_template("yourrecipe.html")
+
+
+@app.route("/shop")
+def shop():
+    return render_template("shop.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
