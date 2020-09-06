@@ -1,9 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap:100,200,300,400,500,600,700');
+
+.brand-logo {
+    font-family: 'ultra', serif;
+    font-size: 2em;
+}
+
+nav{
+    height: 5.5em;
+}
+
+.welcome-msg {
+    font-size: 30px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
+
+footer {
+    height: 4em;
+}
+
+.page-footer{
+    margin-top: .3em;
+}
