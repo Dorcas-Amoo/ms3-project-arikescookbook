@@ -9,6 +9,11 @@ nav{
     height: 5.5em;
 }
 
+.main-heading{
+    margin-left: 3em;
+    margin-bottom: .1em;
+}
+
 .welcome-msg {
     font-size: 30px;
 }
