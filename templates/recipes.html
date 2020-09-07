@@ -6,16 +6,19 @@
 
 <h1 class="main-heading left-align">Recipes:</h1>
 
-{% for recipe in recipes %}
-    {{recipe.category_name}}
-    {{recipe.cuisine_type}}
-    {{recipe.recipe_name}}
-    {{recipe.cooking_time}}
-    {{recipe.ingredients}}
-    {{recipe.preparation}}
-    {{recipe.servings}}
-    {{recipe.created_by}}
-    {{recipe.date}}
-{% endfor %}
+
+<ul class="collapsible popout" data-collapsible="accordion">
+    {% for recipe in recipes %}
+    <li>
+      <div class="collapsible-header">
+      <i class="material-icons">local_dining</i>
+      <strong>{{recipe.category_name}}</strong> <i class="material-icons">trending_flat</i><strong>{{recipe.recipe_name}}</strong>
+      </div>
+      <div class="collapsible-body"><span>{{recipe.cuisine_type}} - {{recipe.description}}</span>
+      <a href="#!" class="btn btn-small waves-effect waves-yellow">Read more</a>
+      </div>
+    </li>
+    {% endfor %}
+</ul>
 
 {% endblock %} 
