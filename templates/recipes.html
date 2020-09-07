@@ -6,4 +6,16 @@
 
 <h1 class="main-heading left-align">Recipes:</h1>
 
-{% endblock %}
+{% for recipe in recipes %}
+    {{recipe.category_name}}
+    {{recipe.cuisine_type}}
+    {{recipe.recipe_name}}
+    {{recipe.cooking_time}}
+    {{recipe.ingredients}}
+    {{recipe.preparation}}
+    {{recipe.servings}}
+    {{recipe.created_by}}
+    {{recipe.date}}
+{% endfor %}
+
+{% endblock %} 
