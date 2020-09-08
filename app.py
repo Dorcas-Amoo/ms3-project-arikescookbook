@@ -31,7 +31,7 @@ def recipes():
 
 @app.route("/create_recipe")
 def create():
-    return render_template("create.html")
+    return render_template("create.html", categories=mongo.db.categories.find(), cuisine=mongo.db.cuisine.find())
 
 
 @app.route("/your_recipe")

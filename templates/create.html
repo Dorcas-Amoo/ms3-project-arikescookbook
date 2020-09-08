@@ -8,10 +8,10 @@
 
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">collections</i>
-                <select id="category_name" name="category_name" class="validate" required>
-                    <option value="" disabled selected></option>
-                    {% for category_name in categories %}
-                        <option value="{{ category_name }}">{{ categories.category_name }}</option>
+                <select id="category" name="category_name" class="validate" required>
+                    <option value="" disabled selected>Choose a category</option>
+                    {% for cat in categories %}
+                        <option value="{{cat.category_name}}">{{cat.category_name}}</option>
                     {% endfor %}
                 </select>
                 <label for="category_name">Category Name</label>
@@ -32,7 +32,10 @@
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">public</i>
                 <select id="cuisine" name="cuisine" class="validate" required>
-                    <option value="" disabled selected></option>
+                    <option value="" disabled selected>Select Cuisine</option>
+                    {% for cuisine in cuisine %}
+                        <option value="{{cuisine.cuisine_type}}">{{cuisine.cuisine_type}}</option>
+                    {% endfor %}
                 </select>
                 <label for="cuisine">Cuisine</label>
             </div>
