@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap:100,200,300,400,500,600');
 
 .brand-logo {
     font-family: 'ultra', serif;
-    font-size: 2em;
 }
 
 nav{
@@ -20,8 +19,7 @@ nav{
 
 .box{
     width: 35%;
-    margin: auto;
-    margin-top: 0;
+    margin: 0 auto;
 }
 
 .collapsible {
@@ -42,10 +40,16 @@ nav{
     margin-top: 2em;
 }
 
+.submit-button {
+    margin-bottom: 1em;
+}
+
 body {
+    background-color: #ffffff
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main {
