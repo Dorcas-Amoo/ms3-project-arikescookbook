@@ -6,7 +6,8 @@
     <div class="row center-align">
         <form class="col s12" method="POST" action="">
 
-            <div class="input-field col s12 m6 valign-wrapper dropdown">
+            <div class="input-field col s12 m6 left-align dropdown">
+                <i class="material-icons prefix">collections</i>
                 <select id="category_name" name="category_name" class="validate" required>
                     <option value="" disabled selected></option>
                     {% for category_name in categories %}
@@ -21,6 +22,80 @@
                 <input id="recipe_name" name="recipe_name" type="text" class="validate" required/>
                 <label for="recipe_name">Recipe Name</label>
             </div>
+
+            <div class="input-field col s12 m6 valign-wrapper">
+                <i class="material-icons prefix">description</i>
+                <input id="description" name="description" type="text" class="validate" required/>
+                <label for="description">Description</label>
+            </div>
+
+            <div class="input-field col s12 m6 left-align dropdown">
+                <i class="material-icons prefix">public</i>
+                <select id="cuisine" name="cuisine" class="validate" required>
+                    <option value="" disabled selected></option>
+                </select>
+                <label for="cuisine">Cuisine</label>
+            </div>
+
+            <div class="list-item left-align">
+                <div class="ingredients input-field col s12 valign-wrapper">
+                    <i class="material-icons prefix">list</i>
+                    <input id="ingredients" name="ingredients" type="text" class="validate" required/>
+                    <label for="ingredients">Ingredients</label>
+                </div>
+                    
+                <a id="add-ingredient" class="btn waves-effect add-button">
+                    <i class="material-icons center">add_box</i>
+                </a>
+                    
+                <a id="remove-ingredient" class="btn waves-effect remove-button">
+                    <i class="material-icons center">indeterminate_check_box</i>
+                </a>
+            </div>
+
+            <div class="list-item left-align">
+                <div class="ingredients input-field col s12 valign-wrapper">
+                    <i class="material-icons prefix">list</i>
+                    <input id="prep" name="prep" type="text" class="validate" required/>
+                    <label for="preparation">Preparation</label>
+                </div>
+                    
+                <a id="add-prep" class="btn waves-effect submit-button">
+                    <i class="material-icons center">add_box</i>
+                </a>
+                    
+                <a id="remove-prep" class="btn waves-effect remove-button">
+                    <i class="material-icons center">indeterminate_check_box</i>
+                </a>
+            </div>
+
+            <div class="input-field col s12 m6 center-align">
+                <i class="material-icons prefix">alarm</i>
+                <input id="cooking_time" name="cooking_time" type="number" class="validate" min="1" required/>
+                <label for="cooking_time">Cooking Time (mins)</label>
+            </div>
+
+            <div class="input-field col s12 m6 valign-wrapper">
+                <i class="material-icons prefix">group</i>
+                <input id="servings" name="servings" type="number" class="validate" min="1" required/>
+                <label for="servings">Servings</label>
+            </div>
+
+            <div class="input-field col s12 m6 valign-wrapper">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="created_by" name="created_by" type="text" class="validate" required/>
+                <label for="created_by">Created by</label>
+            </div>
+
+            <div class="input-field col s12 m6 valign-wrapper">
+                <i class="material-icons prefix">today</i>
+                <input id="date_created" name="date_created" type="text" class="datepicker" required/>
+                <label for="date_created">Date Created</label>
+            </div>
+
+            <button class="btn waves-effect submit-button" type="submit" name="action">Create
+                <i class="material-icons right">add</i>
+            </button>
         </form>
     </div>
 </div>
