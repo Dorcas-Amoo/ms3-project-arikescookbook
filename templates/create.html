@@ -1,4 +1,27 @@
 {% extends "base.html" %} {% block content %}
 
+<h4 class="main-heading center-align">Share your brainchild, create a recipe here!</h4>
 
+<div class="card">
+    <div class="row center-align">
+        <form class="col s12" method="POST" action="">
+
+            <div class="input-field col s12 m6 valign-wrapper dropdown">
+                <select id="category_name" name="category_name" class="validate" required>
+                    <option value="" disabled selected></option>
+                    {% for category_name in categories %}
+                        <option value="{{ category_name }}">{{ categories.category_name }}</option>
+                    {% endfor %}
+                </select>
+                <label for="category_name">Category Name</label>
+            </div>
+
+            <div class="input-field col s12 m6 valign-wrapper">
+                <i class="material-icons prefix">local_dining</i>
+                <input id="recipe_name" name="recipe_name" type="text" class="validate" required/>
+                <label for="recipe_name">Recipe Name</label>
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock %}
