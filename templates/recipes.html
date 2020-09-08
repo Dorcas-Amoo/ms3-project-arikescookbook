@@ -11,8 +11,8 @@
     {% for recipe in recipes %}
     <li>
       <div class="collapsible-header">
-      <i class="material-icons">local_dining</i>
-      <strong>{{recipe.category_name}}</strong> <i class="material-icons">trending_flat</i><strong>{{recipe.recipe_name}}</strong>
+      <i class="material-icons">expand_more</i>
+      <strong>{{recipe.category_name}}</strong><i class="material-icons">local_dining</i><strong>{{recipe.recipe_name}}</strong>
       </div>
       <div class="collapsible-body"><span>{{recipe.cuisine_type}} - {{recipe.description}}</span>
       <a href="#!" class="btn btn-small waves-effect waves-yellow">Read more</a>

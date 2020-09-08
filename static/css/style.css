@@ -31,7 +31,15 @@ nav{
 
 .card {
     width: 80%;
+    border-radius: 5px 40px 5px;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add-button,
+.remove-button {
+    margin-top: 2em;
 }
 
 body {
