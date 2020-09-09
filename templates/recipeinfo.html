@@ -1,6 +1,5 @@
 {% extends "base.html" %} {% block content %}
 
-{% for recipe in recipes %}
 <h3 class="main-heading center-align">{{recipe.recipe_name}}</h3>
 
 <div class="row center-align info-header">
@@ -9,5 +8,5 @@
         <p>Created by:&nbsp;<span>{{recipe.created_by}}</span></p>
     </div>
 </div>
-{% endfor %}
+
 {% endblock %}
