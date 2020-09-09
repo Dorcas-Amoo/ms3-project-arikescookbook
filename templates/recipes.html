@@ -6,7 +6,6 @@
 
 <h1 class="main-heading left-align">Recipes:</h1>
 
-
 <ul class="collapsible popout" data-collapsible="accordion">
     {% for recipe in recipes %}
     <li>
@@ -15,10 +14,10 @@
       <strong>{{recipe.category_name}}</strong><i class="material-icons">local_dining</i><strong>{{recipe.recipe_name}}</strong>
       </div>
       <div class="collapsible-body"><span>{{recipe.cuisine_type}} - {{recipe.description}}</span>
-      <a href="#!" class="btn btn-small waves-effect waves-yellow">Read more</a>
+      <a href="{{url_for('recipeinfo')}}" class="btn btn-small waves-effect waves-yellow">Read more</a>
       </div>
     </li>
     {% endfor %}
 </ul>
 
-{% endblock %} 
+{% endblock %}
