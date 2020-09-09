@@ -29,9 +29,11 @@ def recipes():
     return render_template("recipes.html", recipes=mongo.db.recipes.find())
 
 
-@app.route("/recipe_info")
-def recipeinfo():
-    return render_template("recipeinfo.html", recipes=mongo.db.recipes.find())
+@app.route("/recipe_info/<recipe_id>")
+def recipe_info(recipe_id):
+    that_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    cuisine_type = mongo.db.cuisine.find_one({"_id": ObjectId(that_recipe["cuisine"])})
+    return render_template("recipeinfo.html", recipe=that_recipe, cuisine=cuisine_type)
 
 
 @app.route("/create_recipe")
