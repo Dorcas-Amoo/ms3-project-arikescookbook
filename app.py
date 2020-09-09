@@ -32,7 +32,7 @@ def recipes():
 @app.route("/recipe_info/<recipe_id>")
 def recipe_info(recipe_id):
     that_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    cuisine_type = mongo.db.cuisine.find_one({"_id": ObjectId(that_recipe["cuisine"])})
+    cuisine_type = mongo.db.cuisine.find_one({"_id": ObjectId(that_recipe["cuisine_type"])})
     return render_template("recipeinfo.html", recipe=that_recipe, cuisine=cuisine_type)
 
 

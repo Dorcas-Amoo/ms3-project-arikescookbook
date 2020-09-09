@@ -1,12 +1,28 @@
 {% extends "base.html" %} {% block content %}
 
-<h3 class="main-heading center-align">{{recipe.recipe_name}}</h3>
+<div class="container">
+    <h3 class="main-heading center-align">{{recipe.recipe_name}}</h3>
 
-<div class="row center-align info-header">
-    <div class="col s12 m3">
-        <h5><span><i class="material-icons">account_circle</i></span></h5>
-        <p>Created by:&nbsp;<span>{{recipe.created_by}}</span></p>
+    <div class="row center-align info-header">
+        <div class="col s12 m3">
+            <h5><span><i class="material-icons">account_circle</i></span></h5>
+            <p>Created by:&nbsp;<span>{{recipe.created_by}}</span></p>
+        </div>
+
+        <div class="col s12 m3">
+            <h5><span><i class="material-icons">public</i></span></h5>
+            <p>Cuisine:&nbsp;<span>{{cuisine.cuisine_type}}</span></p>
+        </div>
+
+        <div class="col s12 m3">
+            <h5><span><i class="material-icons">alarm</i></span></h5>
+            <p>Cooking Time:&nbsp;<span>{{recipe.cooking_time}}</span></p>
+        </div>
+
+        <div class="col s12 m3">
+            <h5><span><i class="material-icons">group</i></span></h5>
+            <p>Servings:&nbsp;<span>{{recipe.servings}}</span></p>
+        </div>
     </div>
 </div>
-
 {% endblock %}
