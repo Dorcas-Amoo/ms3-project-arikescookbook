@@ -14,7 +14,7 @@
       <strong>{{recipe.category_name}}</strong><i class="material-icons">local_dining</i><strong>{{recipe.recipe_name}}</strong>
       </div>
       <div class="collapsible-body"><span>{{recipe.cuisine_type}} - {{recipe.description}}</span>
-      <a href="{{url_for('recipeinfo')}}" class="btn btn-small waves-effect waves-yellow">Read more</a>
+      <a href="{{url_for('recipe_info', recipe_id=recipe._id)}}" class="btn btn-small waves-effect waves-yellow">Read more</a>
       </div>
     </li>
     {% endfor %}
