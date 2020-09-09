@@ -29,12 +29,26 @@
 <div class="card row" id="info-card">
     <div class="col s12 m6 center-align">
         <h5><span><i class="material-icons">list</i></span></h5>
-        <p>Ingredients</p>
+        <p><strong>Ingredients</strong></p>
+        {% if recipe.ingredients|length >0 %}
+            <ul>
+                {% for ingredient in recipe.ingredients %}
+                <li><i class="tiny material-icons">forward</i>{{ ingredient }}</li><br />
+                {% endfor %}
+            </ul>
+        {% endif %}
     </div>
 
     <div class="col s12 m6 center-align">
         <h5><span><i class="material-icons">speaker_notes</i></span></h5>
-        <p>Instructions</p>
+        <p><strong>Instructions</strong></p>
+        {% if recipe.instructions|length >0 %}
+            <ul>
+                {% for instruction in recipe.instructions %}
+                <li><i class="tiny material-icons">check_box</i>{{ instruction }}</li><br />
+                {% endfor %}
+            </ul>
+        {% endif %}
     </div>
 </div>
 

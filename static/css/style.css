@@ -29,6 +29,7 @@ nav{
 
 .card {
     width: 80%;
+    background-color: #fff;
     border-radius: 5px 40px 5px;
     margin: 0 auto;
     margin-top: 20px;
@@ -37,6 +38,7 @@ nav{
 
 #info-card {
     width: 80%;
+    background-color: #fff;
     border-radius: 10px 10px 10px;
     margin: 0 auto;
     margin-top: 5px;
@@ -53,7 +55,7 @@ nav{
 }
 
 body {
-    background-color: #fff;
+    background-color: #fffdd0;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
