@@ -57,6 +57,10 @@ nav{
     margin-bottom: 1em;
 }
 
+.edit-btn {
+    margin-bottom: 2em;
+}
+
 body {
     background-color: #fffdd0;
     display: flex;

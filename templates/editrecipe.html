@@ -4,7 +4,7 @@
 
 <div class="card" id="edit-card">
     <div class="row center-align">
-        <form class="col s12" method="POST" action="{{url_for('update_recipe',recipe_id=recipe._id)}}">
+        <form class="col s12" method="POST" action="">
 
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">collections</i>
@@ -99,7 +99,7 @@
              <button class="btn waves-effect submit-button" type="submit" name="action">Update
                 <i class="material-icons right">update</i>
             </button>
-            <button class="btn waves-effect submit-button" type="submit" name="action">Delete
+            <button class="btn waves-effect waves-red submit-button" type="submit" name="action">Delete
                 <i class="material-icons right">delete</i>
             </button>
         </form>
