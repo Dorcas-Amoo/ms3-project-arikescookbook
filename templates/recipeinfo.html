@@ -50,6 +50,9 @@
             </ul>
         {% endif %}
     </div>
+
+    <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-small waves-effect waves-yellow">Edit this recipe</a>
+
 </div>
 
 {% endblock %}
