@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 
 <div class="container">
-    <h3 class="main-heading center-align">{{recipe.recipe_name}}</h3>
+    <h3 class="heading-msg center">{{recipe.recipe_name}}</h3>
 
     <div class="row center-align info-header">
         <div class="col s12 m3">
@@ -26,33 +26,19 @@
     </div>
 </div>
 
+
 <div class="card row" id="info-card">
-    <div class="col s12 m6 left-align">
-        <h5><span><i class="material-icons">list</i></span></h5>
-        <p><strong>Ingredients</strong></p>
-        {% if recipe.ingredients|length >0 %}
-            <ul>
-                {% for ingredient in recipe.ingredients %}
-                <li><i class="tiny material-icons">forward</i>{{ ingredient }}</li><br />
-                {% endfor %}
-            </ul>
-        {% endif %}
+    <div class="col s12 left-align">
+        <h5><i class="material-icons">list</i><span><strong>Ingredients</strong></span></h5>
     </div>
 
-    <div class="col s12 m6 left-align">
-        <h5><span><i class="material-icons">speaker_notes</i></span></h5>
-        <p><strong>Instructions</strong></p>
-        {% if recipe.instructions|length >0 %}
-            <ul>
-                {% for instruction in recipe.instructions %}
-                <li><i class="tiny material-icons">check_box</i>{{ instruction }}</li><br />
-                {% endfor %}
-            </ul>
-        {% endif %}
+    <div class="col s12 left-align">
+        <h5><i class="material-icons">speaker_notes</i><span><strong>Instructions</strong></span></h5>
     </div>
 
-    <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-small waves-effect waves-yellow">Edit this recipe</a>
-
+    <div class="edit-btn center">
+        <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-small waves-effect waves-yellow">Edit recipe</a>
+    </div>
 </div>
 
 {% endblock %}
