@@ -11,7 +11,7 @@
 
         <div class="col s12 m3">
             <h5><span><i class="material-icons">public</i></span></h5>
-            <p>Cuisine:&nbsp;<span>{{cuisine.cuisine_type}}</span></p>
+            <p>Cuisine:&nbsp;<span>{{recipe.cuisine_type}}</span></p>
         </div>
 
         <div class="col s12 m3">
@@ -26,14 +26,15 @@
     </div>
 </div>
 
-
 <div class="card row" id="info-card">
-    <div class="col s12 left-align">
+    <div class="col s12 center-align">
         <h5><i class="material-icons">list</i><span><strong>Ingredients</strong></span></h5>
+        <p>{{recipe.ingredients}}</p>
     </div>
 
-    <div class="col s12 left-align">
+    <div class="col s12 center-align">
         <h5><i class="material-icons">speaker_notes</i><span><strong>Instructions</strong></span></h5>
+        <p>{{recipe.instructions}}</p>
     </div>
 
     <div class="edit-btn center">

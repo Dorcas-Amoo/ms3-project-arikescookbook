@@ -20,7 +20,7 @@ mongo = PyMongo(app)
 
 @app.route("/")
 @app.route("/home")
-def index():
+def home():
     return render_template("index.html")
 
 
@@ -32,8 +32,7 @@ def recipes():
 @app.route("/recipe_info/<recipe_id>")
 def recipe_info(recipe_id):
     that_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    cuisine_type = mongo.db.cuisine.find_one({"_id": ObjectId(that_recipe["cuisine_type"])})
-    return render_template("recipeinfo.html", recipe=that_recipe, cuisine=cuisine_type)
+    return render_template("recipeinfo.html", recipe=that_recipe)
 
 
 @app.route("/edit_recipe/<recipe_id>")
@@ -45,7 +44,7 @@ def edit_recipe(recipe_id):
 
 
 @app.route("/create_recipe")
-def create():
+def create_recipe():
     return render_template("create.html", categories=mongo.db.categories.find(), cuisine=mongo.db.cuisine.find())
 
 
