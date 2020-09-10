@@ -36,18 +36,17 @@ def recipe_info(recipe_id):
     return render_template("recipeinfo.html", recipe=that_recipe, cuisine=cuisine_type)
 
 
-@app.route("/edit_recipe_/<recipe_id>")
+@app.route("/edit_recipe/<recipe_id>")
 def edit_recipe(recipe_id):
     that_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    cuisine_type = mongo.db.cuisine.find_one({"_id": ObjectId(that_recipe["cuisine_type"])})
-    return render_template("editrecipe.html", recipe=that_recipe, cuisine=cuisine_type)
+    all_categories = mongo.db.categories.find()
+    all_cuisine = mongo.db.cuisine.find()
+    return render_template("editrecipe.html", recipe=that_recipe, cuisine=all_cuisine, categories=all_categories)
 
 
 @app.route("/create_recipe")
 def create():
     return render_template("create.html", categories=mongo.db.categories.find(), cuisine=mongo.db.cuisine.find())
-
-
 
 
 @app.route("/shop")
