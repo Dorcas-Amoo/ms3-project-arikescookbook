@@ -1,10 +1,10 @@
 {% extends "base.html" %} {% block content %}
 
-<h4 class="main-heading center-align">Edit your recipe</h4>
+<h4 class="header-msg center">Edit Recipe</h4>
 
-<div class="card">
+<div class="card" id="edit-card">
     <div class="row center-align">
-        <form class="col s12" method="POST" action="">
+        <form class="col s12" method="POST" action="{{url_for('update_recipe',recipe_id=recipe._id)}}">
 
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">collections</i>
@@ -96,5 +96,11 @@
              <button class="btn waves-effect submit-button" type="submit" name="action">Update
                 <i class="material-icons right">update</i>
             </button>
+            <button class="btn waves-effect submit-button" type="submit" name="action">Delete
+                <i class="material-icons right">delete</i>
+            </button>
+        </form>
+    </div>
+</div>
 
 {% endblock %}

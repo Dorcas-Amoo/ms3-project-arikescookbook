@@ -17,6 +17,9 @@ nav{
     font-size: 30px;
 }
 
+.header-msg {
+    margin-top: 1.4em;
+}
 .box{
     width: 35%;
     margin: 0 auto;
@@ -28,12 +31,12 @@ nav{
 }
 
 .card {
-    width: 80%;
+    width: 65%;
     background-color: #fff;
     border-radius: 5px 40px 5px;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #info-card {
