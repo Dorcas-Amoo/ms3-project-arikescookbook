@@ -10,8 +10,8 @@
                 <i class="material-icons prefix">poll</i>
                 <select id="category_name" name="category_name" class="validate" required>
                     <option value="" disabled selected>Choose a category</option>
-                    {% for cat in categories %}
-                        <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                    {% for category in categories %}
+                        <option value="{{category.category_name}}">{{category.category_name}}</option>
                     {% endfor %}
                 </select>
                 <label for="category_name">Category Name</label>
