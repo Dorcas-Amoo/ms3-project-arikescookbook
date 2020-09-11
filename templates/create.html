@@ -5,19 +5,18 @@
 <div class="card">
     <div class="row center-align">
         <form class="col s12" method="POST" action="{{ url_for('insert_recipe') }}">
-            <div class="row">
-                <div class="input-field col s12 m6 left-align dropdown">
-                    <i class="material-icons prefix">poll</i>
-                    <select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected>Choose a category</option>
-                        {% for cat in categories %}
-                            <option value="{{cat.category_name}}">{{cat.category_name}}</option>
-                        {% endfor %}
-                    </select>
-                    <label for="category_name">Category Name</label>
-                </div>
-            </div>
 
+            <div class="input-field col s12 m6 left-align dropdown">
+                <i class="material-icons prefix">poll</i>
+                <select id="category_name" name="category_name" class="validate" required>
+                    <option value="" disabled selected>Choose a category</option>
+                    {% for cat in categories %}
+                        <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                    {% endfor %}
+                </select>
+                <label for="category_name">Category Name</label>
+            </div>
+    
             <div class="input-field col s12 m6 valign-wrapper">
                 <i class="material-icons prefix">local_dining</i>
                 <input id="recipe_name" name="recipe_name" type="text" class="validate" required/>
@@ -30,19 +29,18 @@
                 <label for="description">Description</label>
             </div>
 
-            <div class="row">
-                <div class="input-field col s12 m6 left-align dropdown">
-                    <i class="material-icons prefix">public</i>
-                    <select id="cuisine" name="cuisine" class="validate" required>
-                        <option value="" disabled selected>Select Cuisine</option>
-                        {% for cuisine in cuisine %}
-                            <option value="{{cuisine.cuisine_type}}">{{cuisine.cuisine_type}}</option>
-                        {% endfor %}
-                    </select>
-                    <label for="cuisine">Cuisine</label>
-                </div>
+            
+            <div class="input-field col s12 m6 left-align dropdown">
+                <i class="material-icons prefix">public</i>
+                <select id="cuisine" name="cuisine" class="validate" required>
+                    <option value="" disabled selected>Select Cuisine</option>
+                    {% for cuisine in cuisine %}
+                        <option value="{{cuisine.cuisine_type}}">{{cuisine.cuisine_type}}</option>
+                    {% endfor %}
+                </select>
+                <label for="cuisine">Cuisine</label>
             </div>
-
+        
             <div class="list-item left-align">
                 <div class="ingredients input-field col s12 valign-wrapper">
                     <i class="material-icons prefix">list</i>

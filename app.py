@@ -36,11 +36,9 @@ def create_recipe():
 
 @app.route("/insert_recipe", methods=["POST"])
 def insert_recipe():
-    recipe = mongo.db.recipes
-    recipe.insert_one(
-        {
-            "category_name": request.form.get("category_name"),
-            "cuisine_type": request.form.get("category_name"),
+
+    data = {"category_name": request.form.get("category_name"),
+            "cuisine_type": request.form.get("cuisine_type"),
             "recipe_name": request.form.get("recipe_name"),
             "description": request.form.get("description"),
             "cooking_time": request.form.get("cooking_time"),
@@ -49,8 +47,11 @@ def insert_recipe():
             "servings": request.form.get("servings"),
             "created_by": request.form.get("created_by"),
             "date_created": request.form.get("date_created"),
-        })
-    return redirect(url_for('recipe_info', recipe_id=recipe._id))
+            }
+    recipe = mongo.db.recipes
+    recipe.insert_one(data)
+    new_recipe = recipe.find_one({"category_name": data["category_name"]})["_id"]
+    return redirect(url_for("recipes", recipe_id=new_recipe))
 
 
 @app.route("/recipe_info/<recipe_id>")
