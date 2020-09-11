@@ -2,7 +2,7 @@
 
 <h4 class="header-msg center">Edit Recipe</h4>
 
-<div class="card" id="edit-card">
+<div class="card">
     <div class="row center-align">
         <form class="col s12" method="POST" action="">
 
@@ -46,14 +46,6 @@
                     <input id="ingredients" name="ingredients" type="text" class="validate" required/>
                     <label for="ingredients">Ingredients</label>
                 </div>
-                    
-                <a id="add-ingredient" class="btn waves-effect add-button">
-                    <i class="material-icons center">add_box</i>
-                </a>
-                    
-                <a id="remove-ingredient" class="btn waves-effect remove-button">
-                    <i class="material-icons center">indeterminate_check_box</i>
-                </a>
             </div>
 
             <div class="list-item left-align">
@@ -62,14 +54,6 @@
                     <input id="instructions" name="instructions" type="text" class="validate" required/>
                     <label for="instructions">Instructions</label>
                 </div>
-                    
-                <a id="add-instruction" class="btn waves-effect add-button">
-                    <i class="material-icons center">add_box</i>
-                </a>
-                    
-                <a id="remove-instruction" class="btn waves-effect remove-button">
-                    <i class="material-icons center">indeterminate_check_box</i>
-                </a>
             </div>
 
             <div class="input-field col s12 m6 center-align">
@@ -90,7 +74,7 @@
                 <label for="created_by">Created by</label>
             </div>
 
-            <div class="input-field col s12 m6 valign-wrapper">
+            <div class="input-field col s12 m6 valign-wrapper" id="matfix">
                 <i class="material-icons prefix">today</i>
                 <input id="date_created" name="date_created" type="text" class="datepicker" required/>
                 <label for="date_created">Date Created</label>
@@ -105,5 +89,4 @@
         </form>
     </div>
 </div>
-
 {% endblock %}
