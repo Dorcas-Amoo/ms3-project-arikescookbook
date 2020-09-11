@@ -78,3 +78,10 @@ footer {
 .page-footer{
     margin-top: .3em;
 }
+
+/*----------------------------media queries*/
+@media screen and (max-width: 600px) {
+    .brand-logo {
+       text-align: center;
+     }
+}
