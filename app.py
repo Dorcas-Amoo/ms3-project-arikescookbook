@@ -67,11 +67,6 @@ def edit_recipe(recipe_id):
     return render_template("editrecipe.html", recipe=that_recipe, cuisine=all_cuisine, categories=all_categories)
 
 
-@app.route("/shop")
-def shop():
-    return render_template("shop.html")
-
-
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
