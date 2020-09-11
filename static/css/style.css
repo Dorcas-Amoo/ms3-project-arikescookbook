@@ -61,17 +61,14 @@ nav{
     margin-bottom: 20px;
 }
 
-.add-button,
-.remove-button {
-    margin-top: 2em;
-}
-
-.submit-button {
-    margin-bottom: 1em;
+.btn-small {
+    margin: 5px 5px;
+    padding: 0 0.5em;
+    border-radius: 20px;
 }
 
 .edit-btn {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 footer {
