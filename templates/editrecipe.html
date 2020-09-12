@@ -6,11 +6,11 @@
 
 <div class="card">
     <div class="row center-align">
-        <form class="col s12" method="POST" action="{{ url_for('insert_recipe') }}">
+        <form class="col s12" method="POST" action="{{url_for('update_recipe', recipe_id=recipe._id)}}">
     
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">poll</i>
-                <select id="category_name" name="category_name" class="validate" required>
+                <select id="category_name" name="category_name" class="validate">
                     <option value="" disabled selected>Choose a category</option>
                     {% for category in categories %}
                         {% if category.category_name == recipe.category_name %}
@@ -37,7 +37,7 @@
 
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">public</i>
-                <select id="cuisine" name="cuisine" class="validate" required>
+                <select id="cuisine" name="cuisine" class="validate">
                     <option value="" disabled selected>Select Cuisine</option>
                     {% for cuisine in cuisine %}
                         {% if cuisine.cuisine_type == recipe.cuisine_type %}
