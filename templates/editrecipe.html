@@ -35,7 +35,7 @@
 
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">public</i>
-                <select id="cuisine" name="cuisine" class="validate">
+                <select id="cuisine_type" name="cuisine_type" class="validate">
                     <option value="" disabled selected>Select Cuisine</option>
                     {% for cuisine in cuisine %}
                         {% if cuisine.cuisine_type == recipe.cuisine_type %}
