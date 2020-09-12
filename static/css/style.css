@@ -31,6 +31,7 @@ nav{
 
 .welcome-msg {
     font-size: 30px;
+    text-align: justify;
 }
 
 .header-msg {
@@ -44,6 +45,7 @@ nav{
 .collapsible {
     width: 70%;
     margin: 0 auto;
+    margin-top: 20px;
     margin-bottom: 60px;
 }
 
