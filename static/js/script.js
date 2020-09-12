@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $('.collapsible').collapsible();
     $("select").material_select();
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    setInterval(function() {
+        $(".carousel").carousel("next");
+    }, 2500);
   });
 
 $('.datepicker').pickadate({

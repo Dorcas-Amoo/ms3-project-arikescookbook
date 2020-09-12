@@ -20,6 +20,10 @@ nav{
     height: 5.5em;
 }
 
+.carousel {
+    height: 350px !important;
+}
+
 .main-heading{
     margin-left: 3em;
     margin-bottom: .1em;
