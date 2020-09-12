@@ -21,7 +21,7 @@ nav{
 }
 
 .carousel {
-    height: 350px !important;
+    height: 400px !important;
 }
 
 .welcome-msg {
@@ -63,7 +63,7 @@ nav{
     margin: 5px 5px;
     padding: 0 0.5em;
     margin-bottom: 1em;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 footer {
