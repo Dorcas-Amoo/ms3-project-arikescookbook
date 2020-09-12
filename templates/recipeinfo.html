@@ -1,28 +1,26 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="container">
-    <h3 class="heading-msg center">{{recipe.recipe_name}}</h3>
+<h3 class="heading-msg center">{{recipe.recipe_name}}</h3>
 
-    <div class="row center-align info-header">
-        <div class="col s12 m3">
-            <h5><span><i class="material-icons">account_circle</i></span></h5>
-            <p>Created by:&nbsp;<span>{{recipe.created_by}}</span></p>
-        </div>
+<div class="row center-align info-header">
+    <div class="col s12 m3">
+        <h5><span><i class="material-icons">account_circle</i></span></h5>
+        <p>Created by:&nbsp;<span>{{recipe.created_by}}</span></p>
+    </div>
 
-        <div class="col s12 m3">
-            <h5><span><i class="material-icons">public</i></span></h5>
-            <p>Cuisine:&nbsp;<span>{{recipe.cuisine_type}}</span></p>
-        </div>
+    <div class="col s12 m3">
+        <h5><span><i class="material-icons">public</i></span></h5>
+        <p>Cuisine:&nbsp;<span>{{recipe.cuisine_type}}</span></p>
+    </div>
 
-        <div class="col s12 m3">
-            <h5><span><i class="material-icons">alarm</i></span></h5>
-            <p>Cooking Time(mins):&nbsp;<span>{{recipe.cooking_time}}</span></p>
-        </div>
+    <div class="col s12 m3">
+        <h5><span><i class="material-icons">alarm</i></span></h5>
+        <p>Cooking Time(mins):&nbsp;<span>{{recipe.cooking_time}}</span></p>
+    </div>
 
-        <div class="col s12 m3">
-            <h5><span><i class="material-icons">group</i></span></h5>
-            <p>Servings:&nbsp;<span>{{recipe.servings}}</span></p>
-        </div>
+    <div class="col s12 m3">
+        <h5><span><i class="material-icons">group</i></span></h5>
+        <p>Servings:&nbsp;<span>{{recipe.servings}}</span></p>
     </div>
 </div>
 
@@ -41,5 +39,4 @@
         <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-small waves-effect blue">Edit recipe</a>
     </div>
 </div>
-
 {% endblock %}
