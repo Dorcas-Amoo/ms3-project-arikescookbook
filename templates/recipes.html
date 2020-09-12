@@ -2,6 +2,10 @@
 
 <h1 class="heading-msg center">Recipes</h1>
 
+<div class="row">
+    <a href="{{url_for('create_recipe')}}" class="waves-effect waves-light btn-large orange"><i class="material-icons right">add</i>Create recipe</a>
+</div>
+
 <ul class="collapsible popout" data-collapsible="accordion">
     {% for recipe in recipes %}
     <li>

@@ -33,10 +33,6 @@ nav{
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.box{
-    width: 35%;
-    margin: 0 auto;
-}
 
 .collapsible {
     width: 70%;
@@ -68,10 +64,6 @@ nav{
     padding: 0 0.5em;
     margin-bottom: 1em;
     border-radius: 20px;
-}
-
-.edit-btn {
-    margin-bottom: 1em;
 }
 
 footer {

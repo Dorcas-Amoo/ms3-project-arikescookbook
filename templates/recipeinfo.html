@@ -35,8 +35,9 @@
         <p>{{recipe.instructions}}</p>
     </div>
 
-    <div class="edit-btn center">
+    <div class="info-btns center">
+        <a href="{{url_for('recipes')}}" class="btn waves-effect  btn-small orange"><i class="material-icons left">arrow_back</i>Back to Recipe</a>
         <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-small waves-effect blue">Edit recipe</a>
-    </div>
+    </div> 
 </div>
 {% endblock %}
