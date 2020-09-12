@@ -94,9 +94,9 @@
                 <button class="btn waves-effect green btn-small" type="submit" name="action">Update
                     <i class="material-icons right">update</i>
                 </button>
-                <button class="btn waves-effect red btn-small" type="submit" name="action">Delete
+                <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn waves-effect red btn-small">Delete
                     <i class="material-icons right">delete</i>
-                </button>
+                </a>
             </div>
         </form>
     </div>
