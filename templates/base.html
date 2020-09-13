@@ -14,9 +14,15 @@
             <nav>
                 <div class="nav-wrapper deep-orange">
                     <a href="{{url_for('home')}}" class="brand-logo"><i class="material-icons">home</i>Arike's Cookbook</a>
-                    <ul class="right hide-on-med-and-down">
-                    <li><a href="{{url_for('recipes')}}"><i class="material-icons left">list</i>View Recipes</a></li>
-                    <li><a href="{{url_for('create_recipe')}}"><i class="material-icons left">create</i>Create Recipe</a></li>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down nav-menu" id="mobile-nav">
+                        <li><a href="{{url_for('recipes')}}"><i class="material-icons left">list</i>View Recipes</a></li>
+                        <li><a href="{{url_for('create_recipe')}}"><i class="material-icons left">create</i>Create Recipe</a></li>
+                    </ul>
+                    <ul class="side-nav deep-orange" id="mobile-demo">
+                        <li><a href="{{url_for('home')}}" >Home<i class="material-icons left">home</i></a></li>
+                        <li><a href="{{url_for('recipes')}}">View Recipes<i class="material-icons left">list</i></a></li>
+                        <li><a href="{{url_for('create_recipe')}}">Create Recipe<i class="material-icons left">create</i></a></li>
                     </ul>
                 </div>
             </nav>
