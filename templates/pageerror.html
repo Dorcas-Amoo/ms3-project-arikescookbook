@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<!--Broken url message-->
+<div class="row center-align">
+    <h3>We apologise, something seems to have gone wrong here.</h3>
+</div>
+
+<!--Return home link-->
+<div class="row center-align">
+    <a href="{{url_for('home')}}" class="waves-effect waves-light btn submit-button deep-orange">Return to Homepage
+        <i class="material-icons left">home</i>
+    </a>
+</div>
+
+{% endblock %}
