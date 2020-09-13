@@ -17,9 +17,9 @@
     {% for recipe in recipes %}
     <li>
         <div class="collapsible-header">
+            <a href="{{url_for('recipe_info', recipe_id=recipe._id)}}" class="btn btn-small waves-effect waves-orange">Read more</a>
             <i class="material-icons">local_dining</i>
             <strong>{{recipe.category_name}}</strong> <strong>({{recipe.recipe_name}})</strong><i class="material-icons">expand_more</i>
-            <a href="{{url_for('recipe_info', recipe_id=recipe._id)}}" class="btn btn-small waves-effect waves-orange">Read more</a>
         </div>
         <div class="collapsible-body"><span>{{recipe.cuisine_type}} - {{recipe.description}}</span>
         </div>
