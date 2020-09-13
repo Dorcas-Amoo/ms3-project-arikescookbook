@@ -12,12 +12,18 @@ main {
     flex: 1 0 auto;
 }
 
-.brand-logo {
-    font-family: 'ultra', serif;
+nav{
+    height: 8em;
 }
 
-nav{
-    height: 5.5em;
+.brand-logo {
+    font-family: 'ultra', serif;
+	font-size: 25px !important;
+    margin-top: 10px;
+}
+
+.nav-menu {
+    margin-top: 10px;
 }
 
 .carousel {
@@ -72,11 +78,4 @@ footer {
 
 .page-footer{
     margin-top: .3em;
-}
-
-/*----------------------------media queries*/
-@media screen and (max-width: 600px) {
-    .brand-logo {
-       text-align: center;
-     }
 }

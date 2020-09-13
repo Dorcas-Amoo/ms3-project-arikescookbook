@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.collapsible').collapsible();
     $("select").material_select();
+    $(".button-collapse").sideNav();
     $('.carousel.carousel-slider').carousel({fullWidth: true});
     setInterval(function() {
         $(".carousel").carousel("next");
