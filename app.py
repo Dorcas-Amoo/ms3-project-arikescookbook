@@ -38,8 +38,8 @@ def create_recipe():
 def search_recipe():
     search_recipes = request.form.get("search_recipes")
     mongo.db.recipes.create_index([("$**", "text")])
-    recipe = mongo.db.recipes.find({"$text": {"$search": search_recipes}})
-    return render_template("recipes.html", recipe=recipe, search=True)
+    recipes = mongo.db.recipes.find({"$text": {"$search": search_recipes}})
+    return render_template("recipes.html", recipes=recipes, search=True)
 
 
 @app.route("/insert_recipe", methods=["POST"])
