@@ -1,9 +1,10 @@
 {% extends "base.html" %} {% block content %}
 
+<!-- Page Heading-->
 <h1 class="heading-msg left">Welcome,</h1>
 
+<!-- Welcome Message segment-->
 <div class="row">
-
     <div class="col s12 welcome-msg">
         <p>
         Arike's Cookbook is the African-Caribbean recipe site where you have access to sourced recipes from Africa and the Caribbean with the freedom to share your own idea(s) by adding, editing or deleting any recipe created. 
@@ -12,7 +13,9 @@
         Dive in and join us in this recipe making and cooking adventure.
         </p>
         <p>
-        Happy Cooking! <a href="{{url_for('recipes')}}" class="waves-effect waves-light btn-large orange right">
+        Happy Cooking! 
+        <!-- View Recipes link button -->
+        <a href="{{url_for('recipes')}}" class="waves-effect waves-light btn-large orange right">
         <i class="material-icons left">play_circle_outlined</i>View recipes</a>
         </p>
     </div>
