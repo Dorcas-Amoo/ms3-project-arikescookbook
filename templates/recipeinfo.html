@@ -1,7 +1,8 @@
 {% extends "base.html" %} {% block content %}
-
+<!-- Page Heading: Recipe name -->
 <h3 class="heading-msg center">{{recipe.recipe_name}}</h3>
 
+<!-- Icons and other recipe details segment -->
 <div class="row center-align info-header">
     <div class="col s12 m3">
         <h5><span><i class="material-icons">account_circle</i></span></h5>
@@ -24,6 +25,7 @@
     </div>
 </div>
 
+<!-- The Ingredients and Instruction Segment -->
 <div class="card row" id="info-card">
     <div class="col s12 center-align">
         <h5><i class="material-icons">list</i><span><strong>Ingredients</strong></span></h5>
@@ -34,7 +36,8 @@
         <h5><i class="material-icons">speaker_notes</i><span><strong>Instructions</strong></span></h5>
         <p>{{recipe.instructions}}</p>
     </div>
-
+    
+    <!-- Edit and Back button Segment -->
     <div class="info-btns center">
         <a href="{{url_for('recipes')}}" class="btn waves-effect  btn-small orange"><i class="material-icons left">arrow_back</i>Back to Recipe</a>
         <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-small waves-effect blue">Edit recipe</a>

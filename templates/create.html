@@ -1,11 +1,13 @@
 {% extends "base.html" %} {% block content %}
 
+<!-- Page Heading -->
 <h4 class="heading-msg center">Share your brainchild, create a recipe here.</h4>
 
+<!-- The Create Recipe Form Segment-->
 <div class="card">
     <div class="row center-align">
         <form class="col s12" method="POST" action="{{ url_for('insert_recipe') }}">
-
+            <!-- Category name selection segment -->
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">poll</i>
                 <select id="category_name" name="category_name" class="validate" required>
@@ -16,19 +18,23 @@
                 </select>
                 <label for="category_name">Category Name</label>
             </div>
-    
+            <!-- Category name segment ends -->
+
+            <!-- Recipe name segment -->
             <div class="input-field col s12 m6 valign-wrapper">
                 <i class="material-icons prefix">local_dining</i>
                 <input id="recipe_name" name="recipe_name" type="text" class="validate" required/>
                 <label for="recipe_name">Recipe Name</label>
             </div>
 
+            <!-- Description segment-->
             <div class="input-field col s12 m6 valign-wrapper">
                 <i class="material-icons prefix">description</i>
                 <input id="description" name="description" type="text" class="validate" required/>
                 <label for="description">Description</label>
             </div>
 
+            <!-- Cuisine selection segment -->
             <div class="input-field col s12 m6 left-align dropdown">
                 <i class="material-icons prefix">public</i>
                 <select id="cuisine_type" name="cuisine_type" class="validate" required>
@@ -39,7 +45,9 @@
                 </select>
                 <label for="cuisine">Cuisine</label>
             </div>
-        
+            <!-- Cuisine selection segment ends -->
+
+            <!-- Ingredients segment -->
             <div class="list-item left-align">
                 <div class="ingredients input-field col s12 valign-wrapper">
                     <i class="material-icons prefix">list</i>
@@ -48,6 +56,7 @@
                 </div>
            </div>
 
+             <!-- Instruction segment -->
             <div class="list-item left-align">
                 <div class="instructions input-field col s12 valign-wrapper">
                     <i class="material-icons prefix">speaker_notes</i>
@@ -56,30 +65,35 @@
                 </div>
             </div>
 
+           <!-- Cooking time segment -->
             <div class="input-field col s12 m6 center-align">
                 <i class="material-icons prefix">alarm</i>
                 <input id="cooking_time" name="cooking_time" type="number" class="validate" min="1" required/>
                 <label for="cooking_time">Cooking Time (mins)</label>
             </div>
 
+            <!-- Servings segment -->
             <div class="input-field col s12 m6 valign-wrapper">
                 <i class="material-icons prefix">group</i>
                 <input id="servings" name="servings" type="number" class="validate" min="1" required/>
                 <label for="servings">Servings</label>
             </div>
 
+            <!-- Created By segment -->
             <div class="input-field col s12 m6 valign-wrapper">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="created_by" name="created_by" type="text" class="validate" required/>
                 <label for="created_by">Created by</label>
             </div>
 
+            <!-- Date Picker segment -->
             <div class="input-field col s12 m6 valign-wrapper" id="matfix">
                 <i class="material-icons prefix">today</i>
                 <input id="date_created" name="date_created" type="text" class="datepicker" required/>
                 <label for="date_created">Date Created</label>
             </div>
 
+            <!-- Create and Close Buttons segment -->
             <button class="btn waves-effect btn-small waves-orange" type="submit" name="action">Create
                 <i class="material-icons right">create</i>
             </button>
