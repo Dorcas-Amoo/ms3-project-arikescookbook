@@ -1,3 +1,5 @@
+/*---------------------General (Credits: Influenced based on research,Youtube videos, Google fonts, Materialize & Code Institute)*/
+
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap:100,200,300,400,500,600');
 
 body {
@@ -12,24 +14,6 @@ main {
     flex: 1 0 auto;
 }
 
-nav{
-    height: 8em;
-}
-
-.brand-logo {
-    font-family: 'ultra', serif;
-	font-size: 25px !important;
-    margin-top: 10px;
-}
-
-.nav-menu {
-    margin-top: 10px;
-}
-
-.carousel {
-    height: 400px !important;
-}
-
 .welcome-msg {
     font-size: 30px;
     text-align: justify;
@@ -38,13 +22,6 @@ nav{
 .heading-msg {
     margin-top: 30px;
     margin-bottom: 10px;
-}
-
-.collapsible {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .card {
@@ -72,6 +49,34 @@ nav{
     border-radius: 10px;
 }
 
+/* -----------------------------Navbar (Credits: Influenced by research & Code Institute)*/
+nav{
+    height: 8em;
+}
+
+.brand-logo {
+    font-family: 'ultra', serif;
+	font-size: 25px !important;
+    margin-top: 10px;
+}
+
+.nav-menu {
+    margin-top: 10px;
+}
+
+/* -----------------------------Carousel and Accordion(Credits: Influenced based on research & Materialize)*/
+.carousel {
+    height: 400px !important;
+}
+
+.collapsible {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/* -----------------------------Footer (Credits: Influenced based on research & Code Institute)*/
 footer {
     height: 4em;
 }
