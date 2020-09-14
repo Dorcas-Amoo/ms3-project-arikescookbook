@@ -1,41 +1,56 @@
+# Imported flask functionality and other needed libraries.
 import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
+# Imported environment variables.
 from os import path
 if path.exists("envvar.py"):
     import envvar
 
-
+# An instance of flask
 app = Flask(__name__)
 
+# MongoDB environment variables configuraton.
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
-
+# Declared mongo constant variable.
 mongo = PyMongo(app)
 
 
 @app.route("/")
 @app.route("/home")
 def home():
+    """
+    Opens home page i.e index.html
+    """
     return render_template("index.html")
 
 
 @app.route("/recipes")
 def recipes():
+    """
+    Opens recipe page and displays recipes list in the database
+    """
     return render_template("recipes.html", recipes=mongo.db.recipes.find())
 
 
 @app.route("/create_recipe")
 def create_recipe():
+    """
+    Opens create_recipe page and displays the categories and cuisine collections
+    """
     return render_template("create.html", categories=mongo.db.categories.find(), cuisine=mongo.db.cuisine.find())
 
 
 @app.route("/search_recipe", methods=["POST"])
 def search_recipe():
+    """
+    The recipes search function using index
+    """
     search_recipes = request.form.get("search_recipes")
     mongo.db.recipes.create_index([("$**", "text")])
     recipes = mongo.db.recipes.find({"$text": {"$search": search_recipes}})
@@ -44,7 +59,9 @@ def search_recipe():
 
 @app.route("/insert_recipe", methods=["POST"])
 def insert_recipe():
-
+    """
+    Inserts the new recipe into the database
+    """
     data = {"category_name": request.form.get("category_name"),
             "cuisine_type": request.form.get("cuisine_type"),
             "recipe_name": request.form.get("recipe_name"),
@@ -64,12 +81,18 @@ def insert_recipe():
 
 @app.route("/recipe_info/<recipe_id>")
 def recipe_info(recipe_id):
+    """
+    Opens the recipe_info page and displays the recipe
+    """
     that_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("recipeinfo.html", recipe=that_recipe)
 
 
 @app.route("/edit_recipe/<recipe_id>")
 def edit_recipe(recipe_id):
+    """
+    Opens edit recipe page and displays the recipe on the form
+    """
     that_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
     all_cuisine = mongo.db.cuisine.find()
@@ -78,7 +101,9 @@ def edit_recipe(recipe_id):
 
 @app.route("/update_recipe/<recipe_id>", methods=["POST"])
 def update_recipe(recipe_id):
-
+    """
+    Updates the recipe details in the database
+    """
     data = {"category_name": request.form.get("category_name"),
             "cuisine_type": request.form.get("cuisine_type"),
             "recipe_name": request.form.get("recipe_name"),
@@ -97,12 +122,18 @@ def update_recipe(recipe_id):
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    """
+    Deletes the data from the database
+    """
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     return redirect(url_for("recipes"))
 
 
 @app.errorhandler(404)
 def page_not_found(e):
+    """
+    Error handler
+    """
     return render_template("pageerror.html"), 404
 
 
