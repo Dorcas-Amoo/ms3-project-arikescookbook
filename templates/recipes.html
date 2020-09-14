@@ -1,7 +1,8 @@
 {% extends "base.html" %} {% block content %}
-
+<!-- Page Heading -->
 <h1 class="heading-msg center">Recipes</h1>
 
+<!-- Search form -->
 <div class="row">
     <form action="{{url_for('search_recipe')}}" method="POST">
         <div class="input-field">
@@ -9,10 +10,13 @@
         </div>
         <button class="btn-large waves-effect waves-light deep-orange right" type="submit" name="action">Search<i class="material-icons right">search</i></button>
     </form>
-    
+    <!-- Search form ends -->
+
+    <!-- Create Recipe link button -->
     <a href="{{url_for('create_recipe')}}" class="waves-effect waves-light btn-large orange left"><i class="material-icons right">create</i>Create recipe</a>
 </div>
 
+<!-- Collapsible Accordion displaying recipes-->
 <ul class="collapsible popout" data-collapsible="accordion">
     {% for recipe in recipes %}
     <li>
@@ -21,9 +25,9 @@
             <i class="material-icons">local_dining</i>
             <strong>{{recipe.category_name}}</strong> <strong>({{recipe.recipe_name}})</strong><i class="material-icons">expand_more</i>
         </div>
-        <div class="collapsible-body"><span>{{recipe.cuisine_type}} - {{recipe.description}}</span>
-        </div>
+        <div class="collapsible-body"><span>{{recipe.cuisine_type}} - {{recipe.description}}</span></div>
     </li>
     {% endfor %}
 </ul>
+<!-- Accordion ends -->
 {% endblock %}
