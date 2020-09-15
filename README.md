@@ -2,7 +2,21 @@
 
 ![Page Screenshot](static/images/sitescreenshot.jpg)
 
+
 ## [Visit Site](https://ms3-project-arikescookbook.herokuapp.com/)
+
+## Table of Contents
+1. [Project Description](#description)
+2. [User Experience & Design](#ux)
+3. [Features](#features)
+4. [Technologies Used](#technologies used)
+6. [Testing](#testing)
+7. [Bugs](#bugs)
+7. [Deployment](#deployment)
+8. [Credits & References](#credits)
+
+
+## Project Description
 
 The idea of creating this project was birthed from my passion for cooking. I have always had the desire and vision to publish a cookbook someday, so when the opportunity for this project came along, I thought this is a great opportunity to make my long awaited dream happen. I have chosen the African-Caribbean theme as I believe it will help many from these groups to overcome the day-to-day challenge of what to prepare for the family due to some known limitations in food varieties.
 
