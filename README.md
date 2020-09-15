@@ -13,7 +13,7 @@
 6. [Testing](#testing)
 7. [Bugs](#bugs)
 7. [Deployment](#deployment)
-8. [Credits & References](#credits)
+8. [Credits & References](#credits-&-references)
 
 
 ## Project Description
