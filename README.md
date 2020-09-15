@@ -83,12 +83,30 @@ In order to meet the requirements of the users, I began to brainstorm on what to
      + Cooking time
      + Servings
      + Created By
-     + Date Created (Features a datepicker powered by a script from Materialize) 
+     + Date Created (Features a datepicker powered by a script from Materialize)
+  + The buttons to "Update" the edited recipe, "Delete" the recipe from the database, or "Close" the form and return to Recipes page.
+  + The Footer which displays the copyright content
 6. **The Error Page:** This feature was added as a last resort so was not included in the wireframe but it is to ensure users are able to get back to the right page in the case of any error on visiting the site especially if the wrong url is being entered in the browser.
 
 NOTES: The Create and Edit forms feature multiple validations to prompt users to complete an input field or to insert a required format.
        The Navbar on mobile view changes to a sideNav (Burger bar) where the pages link can be accessed.
 
+
+### Features to be Implemented
+
+In order to expand the features of the site, I would like to implement the following in the future:
+
+   I) A login and authentication page with personalised greeting.
+   II) Most importantly a BACKEND VALIDATION which will help to provide additional security to the data on the site.
+   III) A dashboard for additional records of the number of recipes available on the site.
+   IV) A pagination to help reduce the lenght of the recipe page for better user experience.
+   V) Allow users to add more cuisine type to the site so as to expand the scope.
+   VI) A page where users on login can view, manipulate and manage their own recipes.
+   VII) A flash message popping up when a user want to perform the delete function.
+   VIII) A modal message to inform the user that an action carried out had been successful or not.
+   IX) A product page to expand the scope of the site.
+   X) A user feedback, comments and testimonials feature.
+   
 
 ## Technologies Used
 The following technologies were used to achieve the requirements of this project:
