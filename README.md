@@ -44,7 +44,7 @@ In order to meet the requirements of the users, I began to brainstorm on what to
   + The collapsible accordion (Displays all created recipes and on click, reveals the description. Details are generated from the database).
   + The "Read More" button on the accordion (Serves a link to view the "Recipe Info" page).
   + The Footer which displays the copyright content
-3. **The Recipes Info Page:** contains the following:
+3. **The Recipes Info Page:** This contains the following:
   + The Navbar which displays the Logo (links to the homepage on click) and the "View Recipes" and "Create Recipes" pages.
   + The Carousel (Image Slider).
   + The page header (The Recipe_Name generated from the database).
@@ -52,7 +52,7 @@ In order to meet the requirements of the users, I began to brainstorm on what to
   + The Ingredients and Instructions section (Details generated from the database).
   + The Navigation buttons to access Edit Recipe page or to return to Recipes page.
   + The Footer which displays the copyright content
-4. **The Create Recipe Page:** contains the following:
+4. **The Create Recipe Page:** This contains the following:
   + The Navbar which displays the Logo (links to the homepage on click) and the "View Recipes" and "Create Recipes" pages.
   + The Carousel (Image Slider).
   + The page header.
@@ -69,7 +69,7 @@ In order to meet the requirements of the users, I began to brainstorm on what to
      + Date Created (Features a datepicker powered by a script from Materialize)
   + The buttons to "Create" a recipe or "Close" the form and return to Recipes page.
   + The Footer which displays the copyright content
-5. **The Edit Recipe Page:** contains the following:
+5. **The Edit Recipe Page:** This contains the following:
   + The Navbar which displays the Logo (links to the homepage on click) and the "View Recipes" and "Create Recipes" pages.
   + The Carousel (Image Slider).
   + The page header.
@@ -141,7 +141,7 @@ The following technologies were used to achieve the requirements of this project
   + Icons used throughout the site were generated from here.
 
 ## Testing
-Over the course of building this project, I encountered a few challenging **bugs** which I was able to **fix** by asking relevant quetions from the Tutors, my Mentor and carrying out extensive research. This made it paramount for me to adopt the *defensive* approach and habitually carry out testings as I build the site (I made use of the **developer tool**) so as to ensure things work properly, and in addition to this, I carried out the following:
+Over the course of building this project, I encountered a few challenging **bugs** which I was able to **fix** by asking relevant questions from the Tutors, my Mentor and carrying out extensive research. This made it paramount for me to adopt the *defensive* approach and habitually carry out testings as I build the site (I made use of the **developer tool**) so as to ensure things work properly, and in addition to this, I carried out the following:
 
 + **Responsiveness Testing**
 1. During construction, I regularly test the site against its *Responsiveness* by clicking on **Inspect** to view the *developer tool*.
@@ -192,7 +192,7 @@ I carried out the following tests on these devices (Mobile, tablet, laptop):
   + For my **Python code testing**, I used [PEP8](http://pep8online.com/)
   + For **Browsers testing**, I did not have any issues opening or viewing the site on the different browsers that was used namely: **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** and other different mobile browsers, namely, **Android** and **iOS.** On all of these platforms, I had a smooth user-friendly experience.
 
-+ **Bugs**
+## Bugs
 
 I encountered a number of bugs in the process which I was able to overcome the majority of them.
 
@@ -204,6 +204,32 @@ I encountered a number of bugs in the process which I was able to overcome the m
 
 
 ## Deployment
+
+To deploy my site, I made use of the Heroku hosting platform following this process:
+
+1. Created a new app in Heroku
+2. In the settings tab, the following environment variables configuration were set in place:
+  - MONGO_DBNAME = "Your MongoDB collection name"
+  - MONGO_URI = mongodb+srv://<username>:<password>@<clustername>-y3iip.mongodb.net/<dbname>?retryWrites=true&w=majority
+  - SECRET_KEY = "My secret key"
+  - IP = `5000`
+  - PORT = `0.0.0.0`
+3. From the heroku dashboard of my application, I clicked on "Deploy" > "Deployment method" and selected GitHub.
+4. I connected to my GitHub repository.
+5. I then set the project up for automatic deployment which helped to deploy easily whenever the master branch is updated through pushing to Github.
+6. To do this manually, in the deployment section, select the master branch and click 'Deploy Branch".
+7. The site should then be successfully deployed.
+  
+To run code **locally**:
+1. From [GitHub](https://github.com/), click on the "Clone" button.
+2. Choose "Download Zip" (The download starts).
+3. After the download is complete, open the zip folder by double clicking to access created page.
+4. The page will launch on your chosen browser.
+NOTE: Ensure that you have MondoDB downloaded on your device else this will not work. Also, install the following:
+  + `pip install -r requirements.txt`.
+  + For any newly added packages to the project, use `pip freeze --local > requirements.txt ` this will update the requirements.txt file with new dependencies.
+  + Also ensure that a Procfile is installed for it to run on Heroku.
+  
 
 ## Credits & References
 
