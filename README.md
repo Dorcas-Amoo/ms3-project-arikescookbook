@@ -141,6 +141,67 @@ The following technologies were used to achieve the requirements of this project
   + Icons used throughout the site were generated from here.
 
 ## Testing
+Over the course of building this project, I encountered a few challenging **bugs** which I was able to **fix** by asking relevant quetions from the Tutors, my Mentor and carrying out extensive research. This made it paramount for me to adopt the *defensive* approach and habitually carry out testings as I build the site (I made use of the **developer tool**) so as to ensure things work properly, and in addition to this, I carried out the following:
+
++ **Responsiveness Testing**
+1. During construction, I regularly test the site against its *Responsiveness* by clicking on **Inspect** to view the *developer tool*.
+2. I then checked the layout by clicking on the **Ipad, the Iphone and selected other devices to view**.
+3. I also adjusted the pane to view the point at which the design changes to a mobile, tablet, laptop or desktop view.
+4. This process helped me to add the media queries section, in order to achieve my desired outcome.
+
++ **Page Testing**
+I carried out the following tests on these devices (Mobile, tablet, laptop):
+   + Once the site loads, all contents were displayed as expected.
+   + I clicked on all links in the Navigation and side bars which opens the required page successfully.
+   + I click on all buttons which acted as expected.
+   + I clicked on the search section and was able to enter words and successfully displayed the expected results. Howevever, I noticed an error where some unexpected data were being displayed.
+   + I clicked on the accordion which worked and displayed the relevant information as expected.
+   + The "read more" button took me to the correct page.
+   + All icons behave as expected.
+   + All forms stored and displays data as expected.
+   + Form input validations works as expected.
+   + The datepicker works correctly even though a bug was encountered but resolved.
+   + The dropdown options work correctly.
+   + The create button on click, stores the entered data in the database and the data is displayed in the Recipes list as expected.
+   + The update button, successfully changes the data in the database.
+   + The close button takes you to the expected pages.
+   + The delete button works successfully as data was being removed from the database on click.
+   + Error page worked as expected, the return button takes you back to the Homepage successfully.
+   + Although the image layout was initially faulty but this was fixed and the carousel scrolls as expected.
+   + The copyright displays correctly on all pages.
+
++ **UX Testing**
+  + To validate the user experience, I asked a number of my friends and family members to help. They were asked to use the site so as to help give an unbias and accurate feedback.
+ 
+   1. They were to try using all the links to test its functionality and usability.
+ 
+   2. They all came back with different feedbacks as follows:
+     + "Whao Whao, beautiful, a job well done!"
+     + "I like the pictures and colour-scheme!"
+     + "The site was vey easy to use"
+     + "It opens fast and very clean"
+     + "The images are not even" (Although, I had noticed this myself, this being pointed out made me go all the way to resolve this)
+     + "I was able to submit a recipe" (This came through to my list of data in my database)
+     + "I edited a recipe" (I confirmed this from my database)
+     + "I deleted a test recipe" (I confirmed this from my database)
+     
+ + **Other Testings**
+  + For my **HTML5 code testing**, I used [The W3C Markup Validation Service](https://validator.w3.org/)
+  + For my **CSS3 code testing**, I used [The W3C CSS Validation Service - Jigsaw](https://jigsaw.w3.org/css-validator/)
+  + For my **Javascript and JQuery code testing**, I used [JSHint](https://jshint.com/)
+  + For my **Python code testing**, I used [PEP8](http://pep8online.com/)
+  + For **Browsers testing**, I did not have any issues opening or viewing the site on the different browsers that was used namely: **Microsoft Edge**, **Mozilla Firefox**, **Google Chrome**, **Safari** and other different mobile browsers, namely, **Android** and **iOS.** On all of these platforms, I had a smooth user-friendly experience.
+
++ **Bugs**
+
+I encountered a number of bugs in the process which I was able to overcome the majority of them.
+
++ The Search section: Upon carrying out a search, I noticed no results were being displayed and after asking my mentor, he helped me to see where I have made a mistake in my written app.py code and this was resolved. However, I find that some unexpected data were being displayed when I type in "Rice Dish", it brings out all the rice dishes and some others that are not. I am yet to get this resolved.
++ The datepicker was not being initialize due to a known bug from Materialize, the Code Institute Task Manager tutorial helped to resolve this.
++ The Carousel images were noticed to be uneven on mobile view, and the images were resized to solve this.
++ The "Read More" buttons displays read at a point in mobile view. Although I tried to fix this, I am yet to solve this.
++ The dropdown menu were not being displayed correctly on Edit Recipe page which made data entered in the "Cuisine" section to be displayed as "None". I was able to resolved this through guidance from the Tutor support as they helped me to see a spelling mistake which I corrected.
+
 
 ## Deployment
 
