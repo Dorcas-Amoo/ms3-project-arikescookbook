@@ -93,16 +93,34 @@ NOTES: The Create and Edit forms feature multiple validations to prompt users to
 ## Technologies Used
 The following technologies were used to achieve the requirements of this project:
 
++ [Heroku](https://www.heroku.com/)
+  + This was used to host my website
 + [Github](https://github.com/)
-  + Github was used as the project repository and site host. 
+  + This was used as the project repository. 
 + [Gitpod](https://www.gitpod.io/) 
   + This was used to develop the site and [Git](https://git-scm.com/) for version control.
 + [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-  + CSS3 was used to sytle my website to my desired outcome.
+  + CSS3 was used to custom sytle my website to my desired outcome.
 + [HTML5](https://en.wikipedia.org/wiki/HTML5)
   + HTML5 was used as the markup language to structure and present my website on the Web.
 + [Javascript](https://www.javascript.com/)
-  + I used this to achieve the interactive part of the game which helps the users have good fun on visiting the website.
+  + This was used to achieve the interactive part of the site.
++ [JQuery](https://www.jquery.com/)
+  + These scripts from the Materialize were used to initialise some features on my site.
++ [Python](https://www.python.org/)
+  + I used this as the backend language to help manipulate data.
++ [Flask](https://palletsprojects.com/p/flask/)
+  + The web framework written in python used for building my application.
++ [Jinja](https://pypi.org/project/Jinja2/)
+  + This serves as the templating language used with flask.
++ [MongoDB](https://www.mongodb.com/cloud/atlas)
+  + This was used to host my stored database. Serves as a repository for my database.
++ [Pymongo](https://pymongo.readthedocs.io/en/stable/)
+  + This serves as the communication link between my application and the mongoDB database.
++ [Materialize](http://archives.materializecss.com/0.100.2/)
+  + This frontend framework was used to build the site and then customised to my desired outcome.
++ [Material Icons](https://material.io/resources/icons/?style=baseline)
+  + Icons used throughout the site were generated from here.
 
 ## Testing
 
