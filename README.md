@@ -9,7 +9,7 @@
 1. [Project Description](#description)
 2. [User Experience & Design](#ux)
 3. [Features](#features)
-4. [Technologies Used](#technologies used)
+4. [Technologies Used](#technologies-used)
 6. [Testing](#testing)
 7. [Bugs](#bugs)
 7. [Deployment](#deployment)
