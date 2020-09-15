@@ -232,14 +232,38 @@ NOTE: Ensure that you have MondoDB downloaded on your device else this will not 
   
 
 ## Credits & References
+From my research, the following made an impact in the successful completion of this project as it had been challenging yet enjoyable. I have also learnt a lot from completing the project. Please kindly see links below. Thank you.
+
 
 ### Content
++ [The Font by Google Fonts' Ultra](https://fonts.google.com/specimen/Ultra?query=ultra)
++ [Custom Styling](https://css-tricks.com/)
++ [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines)
+
++ **Tutorials and Other useful resources**
+  + [Code Institute for HTML, CSS, JavaScript & UX](https://courses.codeinstitute.net/program/FullstackWebDeveloper)
+  + [Foodology](https://github.com/lewisclark4/CI-MilestoneProjectThree)
+  + [Recipebook](https://github.com/sohailshams/cookbook)
+  + [BYOBoba](https://github.com/amybru/byoboba)
+  + [Carousel Styling](https://www.youtube.com/watch?v=Mh3SV0iCNxw)
+
 
 ### Media
+The images and recipes used, and my *Wireframes* were from the following:
++ [Balsamiq](https://balsamiq.com/)
++ [The meatpie](https://cheflolaskitchen.com/west-african-meat-pie/)
++ [The Jollof image](https://i.pinimg.com/originals/10/ef/46/10ef46e6db7545c35630ac4a5fb063d0.jpg)
++ [The Assorted](https://duyt4h9nfnj50.cloudfront.net/resized/1526866690836-w2880-ab.jpg)
++ [The food](https://media.istockphoto.com/photos/jollof-rice-with-chicken-and-plantains-picture-id688602226?k=6&m=688602226&s=612x612&w=0&h=Z3uutBWu7u1qVSJfupyPpffqXIOf6TQGo2z8ddEwNhw=)
+
 
 ### Acknowledgements
+I got inspiration for my project from the following:
++ [Code Institute](https://courses.codeinstitute.net/program/FullstackWebDeveloper)
 
-Many thanks to my Mentor **Dick Vlaanderen** for his guidance
+Many thanks to my Mentor **Dick Vlaanderen** for his guidance despite the challenge of time difference. Also to my family and friends who helped to test the usability and functionality of the project and gave valuable feedbacks to assist in improving the site.
+
+Also a huge THANK YOU to the Code Institute Team! (Tutors and All).
 
 --------
 
